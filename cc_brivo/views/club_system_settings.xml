@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="clubcloud_brivo_settings_panel" model="ir.ui.view">
+    <field name="name">brivo.club.system.settings</field>
+    <field name="model">club.system.settings</field>
+    <field name="inherit_id" ref="ksc_club_cloud.club_cloud_system_settings_form_view"/>
+    <field name="arch" type="xml">
+      <group name="document" position="before">
+        <group name="brivo" string="Brivo App Credentials">
+            <field name="brivo_app_client_id"/>
+            <field name="brivo_app_client_secret" password="True"/>
+            <field name="brivo_access_username"/>
+            <field name="brivo_access_password" password="True"/>
+            <field name="brivo_api_key"/>
+          </group>
+          <button
+            type="object"
+            name="action_test_brivo_connection"
+            string="Test Brivo Connection"
+            class="btn btn-primary"
+          />
+      </group>
+    </field>
+  </record>
+</odoo>

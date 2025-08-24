@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="clubcloud_brivo_partner_view" model="ir.ui.view">
+    <field name="name">brivo.res.partner</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="ksc_club_cloud.club_member_form_view"/>
+    <field name="arch" type="xml">
+      <page name="ratings" position="after">
+        <page name="brivo" string="Brivo">
+          <button
+            type="object"
+            name="action_manage_suspended_status"
+            string="Manage Suspended Status"
+            class="btn btn-primary"
+          />
+        </page>
+      </page>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="brivo_sale_order_template_form" model="ir.ui.view">
+        <field name="name">brivo.sale.order.template.form</field>
+        <field name="model">sale.order.template</field>
+        <field name="type">form</field>
+        <field name="active">True</field>
+        <field name="inherit_id" ref="ksc_club_cloud.club_cloud_membership_plan_view_form_new"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='sale_info2']" position="after">
+              <group name="brivo" string="Brivo Settings">
+                <field name="brivo_group_id" readonly="True"/>
+                <button
+                  type="object"
+                  name="action_open_assign_brivo_group_wizard"
+                  string="Assign Brivo Group"
+                  class="btn btn-primary"
+                />
+              </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

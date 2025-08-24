@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_assign_brivo_group_wizard,access_assign_brivo_group_wizard,model_assign_brivo_group_wizard,base.group_system,1,1,1,1
+access_brivo_groups,access_brivo_groups,model_brivo_groups,base.group_system,1,1,1,1
+access_manage_suspended_status_wizard,access_manage_suspended_status_wizard,model_manage_suspended_status_wizard,base.group_system,1,1,1,1
